@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/Recedivies/recedivies-site/compare/v0.0.3...v0.0.4) (2022-07-09)
+
+
+### Features
+
+* added animate page ([deb2688](https://github.com/Recedivies/recedivies-site/commit/deb268825b9bd6615210b3f0239296d0fd492abf))
+* added seo ([0d290fc](https://github.com/Recedivies/recedivies-site/commit/0d290fc8ba38edcb011d98851727454a893621a4))
+* added tech stack for projects ([d679133](https://github.com/Recedivies/recedivies-site/commit/d679133fe2a1f5d565d3ac07a63ef36faa796302))
+
 ### 0.0.3 (2022-07-09)
 
 
