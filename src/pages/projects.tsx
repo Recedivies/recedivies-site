@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import { SiNextdotjs, SiTailwindcss, SiTypescript } from "react-icons/si";
 
 import Accent from "../components/Accent";
+import AnimatePage from "../components/AnimatePage";
 import ProjectCard from "../components/ProjectCard";
 import Layout from "../components/layout/Layout";
 import { clsxm } from "../components/links/clsxm";
@@ -40,20 +41,22 @@ const projects: Project[] = [
 const Projects: NextPage = () => {
   return (
     <Layout>
-      <main>
-        <section className={clsxm("flex flex-col justify-center")}>
-          <article className="layout space-y-10 py-8">
-            <h1 className="text-3xl md:text-5xl 2xl:text-6xl">
-              <Accent>Projects</Accent>
-            </h1>
-            <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-              {projects.map((project) => (
-                <ProjectCard project={project} key={project.slug} />
-              ))}
-            </div>
-          </article>
-        </section>
-      </main>
+      <AnimatePage>
+        <main>
+          <section className={clsxm("flex flex-col justify-center")}>
+            <article className="layout space-y-10 py-8">
+              <h1 className="text-3xl md:text-5xl 2xl:text-6xl">
+                <Accent>Projects</Accent>
+              </h1>
+              <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+                {projects.map((project) => (
+                  <ProjectCard project={project} key={project.slug} />
+                ))}
+              </div>
+            </article>
+          </section>
+        </main>
+      </AnimatePage>
     </Layout>
   );
 };
