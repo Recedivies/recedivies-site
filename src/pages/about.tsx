@@ -2,13 +2,15 @@ import type { NextPage } from "next";
 
 import Accent from "../components/Accent";
 import AnimatePage from "../components/AnimatePage";
+import Seo from "../components/Seo";
 import TechStack from "../components/TechStack";
 import Layout from "../components/layout/Layout";
-import { clsxm } from "../components/links/clsxm";
+import { clsxm } from "../lib/clsxm";
 
 const About: NextPage = () => {
   return (
     <Layout>
+      <Seo templateTitle="About" />
       <AnimatePage>
         <main>
           <section className={clsxm("my-16 flex flex-col justify-center")}>

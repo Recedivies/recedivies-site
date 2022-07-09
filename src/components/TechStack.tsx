@@ -10,7 +10,7 @@ import {
 } from "react-icons/si";
 import { Tooltip } from "react-tippy";
 
-import { clsxm } from "./links/clsxm";
+import { clsxm } from "../lib/clsxm";
 
 const TechStack = () => {
   return (

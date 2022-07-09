@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 
 import Accent from "../Accent";
 import UnstyledLink from "../links/UnstyledLink";
-import { clsxm } from "../links/clsxm";
+import { clsxm } from "../../lib/clsxm";
 
 type Links = {
   href: string;

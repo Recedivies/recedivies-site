@@ -1,5 +1,5 @@
+import { clsxm } from "../lib/clsxm";
 import { AccentType } from "../types";
-import { clsxm } from "./links/clsxm";
 
 const Accent = ({ children, className }: AccentType) => {
   return (

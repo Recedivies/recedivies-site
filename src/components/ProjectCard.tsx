@@ -4,8 +4,8 @@ import { MdOpenInNew } from "react-icons/md";
 import { useInView } from "react-intersection-observer";
 import { Tooltip } from "react-tippy";
 
+import { clsxm } from "../lib/clsxm";
 import { ProjectCardProp } from "../types";
-import { clsxm } from "./links/clsxm";
 
 const ProjectCard = ({ project }: ProjectCardProp) => {
   const { ref, inView } = useInView({

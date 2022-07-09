@@ -1,9 +1,6 @@
 import { Variants, motion } from "framer-motion";
-import { ReactNode } from "react";
 
-type AnimatePageProps = {
-  children: ReactNode;
-};
+import { AnimatePageProps } from "../types";
 
 const AnimatePage = ({ children }: AnimatePageProps) => {
   const variants: Variants = {

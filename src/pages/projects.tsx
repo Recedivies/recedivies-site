@@ -4,8 +4,9 @@ import { SiNextdotjs, SiTailwindcss, SiTypescript } from "react-icons/si";
 import Accent from "../components/Accent";
 import AnimatePage from "../components/AnimatePage";
 import ProjectCard from "../components/ProjectCard";
+import Seo from "../components/Seo";
 import Layout from "../components/layout/Layout";
-import { clsxm } from "../components/links/clsxm";
+import { clsxm } from "../lib/clsxm";
 import { Project } from "../types";
 
 const projects: Project[] = [
@@ -41,6 +42,7 @@ const projects: Project[] = [
 const Projects: NextPage = () => {
   return (
     <Layout>
+      <Seo templateTitle="Projects" description="List of my projects" />
       <AnimatePage>
         <main>
           <section className={clsxm("flex flex-col justify-center")}>
