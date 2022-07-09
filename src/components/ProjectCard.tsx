@@ -2,6 +2,7 @@ import Image from "next/image";
 import { AiFillGithub } from "react-icons/ai";
 import { MdOpenInNew } from "react-icons/md";
 import { useInView } from "react-intersection-observer";
+import { Tooltip } from "react-tippy";
 
 import { Project } from "../pages/projects";
 import { clsxm } from "./links/clsxm";
@@ -46,6 +47,27 @@ const ProjectCard = ({ project }: ProjectCardProp) => {
           {project.title}
         </a>
         <p className="mb-1">{project.content}</p>
+        <div className="grid grid-cols-9">
+          {project.stacks?.map((tech) => (
+            <Tooltip
+              key={tech.id}
+              html={
+                <div>
+                  <p>{tech.name}</p>
+                </div>
+              }
+            >
+              <tech.icon
+                key={tech.id}
+                className={clsxm(
+                  "h-8 w-8 md:h-6- md:w-10",
+                  "text-gray-600 hover:text-primary-300 dark:text-gray-200 dark:hover:text-primary-300",
+                  "transition-colors",
+                )}
+              />
+            </Tooltip>
+          ))}
+        </div>
         <div className="absolute bottom-0 left-0 flex w-full items-center px-4 pb-4">
           {project.demo && (
             <a

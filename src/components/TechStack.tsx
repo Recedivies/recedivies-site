@@ -12,13 +12,39 @@ import { Tooltip } from "react-tippy";
 
 import { clsxm } from "./links/clsxm";
 
+const TechStack = () => {
+  return (
+    <div className="flex space-x-2 md:space-x-4">
+      {stacks.map((tech) => (
+        <Tooltip
+          key={tech.id}
+          html={
+            <div>
+              <p>{tech.tooltip}</p>
+            </div>
+          }
+        >
+          <tech.icon
+            key={tech.id}
+            className={clsxm(
+              "h-8 w-8 md:h-10 md:w-10",
+              "text-gray-600 hover:text-primary-300 dark:text-gray-200 dark:hover:text-primary-300",
+              "transition-colors",
+            )}
+          />
+        </Tooltip>
+      ))}
+    </div>
+  );
+};
+
 const stacks = [
   {
     id: "python",
     icon: SiPython,
     tooltip: (
       <>
-        <a href="https://www.python.org/">Django</a>
+        <a href="https://www.python.org/">Python</a>
       </>
     ),
   },
@@ -81,36 +107,10 @@ const stacks = [
     icon: SiPostgresql,
     tooltip: (
       <>
-        <a href="https://www.postgresql.org/">React</a>
+        <a href="https://www.postgresql.org/">Postgresql</a>
       </>
     ),
   },
 ];
-
-const TechStack = () => {
-  return (
-    <div className="flex space-x-2 md:space-x-4">
-      {stacks.map((tech) => (
-        <Tooltip
-          key={tech.id}
-          html={
-            <div>
-              <p>{tech.tooltip}</p>
-            </div>
-          }
-        >
-          <tech.icon
-            key={tech.id}
-            className={clsxm(
-              "h-8 w-8 md:h-10 md:w-10",
-              "text-gray-600 hover:text-primary-300 dark:text-gray-200 dark:hover:text-primary-300",
-              "transition-colors",
-            )}
-          />
-        </Tooltip>
-      ))}
-    </div>
-  );
-};
 
 export default TechStack;

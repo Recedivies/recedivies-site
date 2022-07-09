@@ -1,10 +1,16 @@
 import type { NextPage } from "next";
+import { SiNextdotjs, SiTailwindcss, SiTypescript } from "react-icons/si";
 
 import Accent from "../components/Accent";
 import ProjectCard from "../components/ProjectCard";
 import Layout from "../components/layout/Layout";
 import { clsxm } from "../components/links/clsxm";
 
+export type Stacks = {
+  id: string;
+  icon: any;
+  name: string;
+};
 export type Project = {
   image?: string;
   title?: string;
@@ -13,6 +19,7 @@ export type Project = {
   github?: string;
   type?: string;
   slug: string;
+  stacks?: Stacks[];
 };
 
 const projects: Project[] = [
@@ -20,11 +27,28 @@ const projects: Project[] = [
     title: "Personal Website",
     content:
       "This is my personal website where I my put my information including activities, resume, and projects.",
-    slug: "test",
+    slug: "personal_website",
     type: "website",
     github: "Recedivies/recedivies-site",
     demo: "https://recedivies.vercel.app/",
     image: "recedivies-site.png",
+    stacks: [
+      {
+        id: "nextjs",
+        icon: SiNextdotjs,
+        name: "Next.js",
+      },
+      {
+        id: "typescript",
+        icon: SiTypescript,
+        name: "TypeScript",
+      },
+      {
+        id: "Tailwindcss",
+        icon: SiTailwindcss,
+        name: "Tailwind CSS",
+      },
+    ],
   },
 ];
 
