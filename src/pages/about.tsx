@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 
 import Accent from "../components/Accent";
+import TechStack from "../components/TechStack";
 import Layout from "../components/layout/Layout";
 import { clsxm } from "../components/links/clsxm";
 
@@ -19,14 +20,23 @@ const About: NextPage = () => {
                 "md:text-lg 2xl:text-xl",
               )}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum
+              I am very passionate in learning programming and software
+              engineering. I have a good experience with backend development,
+              using Nginx as a reverse proxy, using docker as a container in
+              development and production environment. I also like to try
+              frontend development too by making some React projects. I really
+              liked using GitHub Action to do CI/CD stuff. In my free time, I
+              like to explore all of tech and development stuff about software
+              engineering.
             </p>
+          </article>
+        </section>
+        <section className={clsxm("my-20 flex flex-col justify-center")}>
+          <article className="layout">
+            <h2 className="mb-8 text-2xl md:text-4xl 2xl:text-5xl">
+              Tech Stack
+            </h2>
+            <TechStack />
           </article>
         </section>
       </main>
