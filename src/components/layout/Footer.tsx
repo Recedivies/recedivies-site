@@ -81,9 +81,9 @@ const Footer = () => {
               >
                 <button
                   aria-label="Mail button"
-                  className="rounded-sm align-middle focus:outline-none focus-visible:ring focus-visible:ring-primary-300"
+                  className="rounded-sm align-middle focus:outline-none focus-visible:ring focus-visible:ring-primary-200"
                 >
-                  <FiMail className="my-auto h-7 w-7 align-middle text-gray-600 hover:text-primary-300 dark:text-gray-300 dark:hover:text-primary-300" />
+                  <FiMail className="my-auto h-7 w-7 align-middle text-gray-600 hover:text-primary-300 dark:text-gray-300 dark:hover:text-primary-200" />
                 </button>
               </CopyToClipboard>
             </TooltipTippy>
@@ -96,15 +96,15 @@ const Footer = () => {
                   className="inline-flex items-center justify-center rounded-sm focus:outline-none focus-visible:ring focus-visible:ring-primary-300"
                   href={social.link}
                 >
-                  <social.icon className="my-auto h-6 w-6 align-middle text-gray-600 transition-colors hover:text-primary-300 dark:text-gray-300 dark:hover:text-primary-300" />
+                  <social.icon className="my-auto h-6 w-6 align-middle text-gray-600 transition-colors hover:text-primary-300 dark:text-gray-300 dark:hover:text-primary-200" />
                 </UnstyledLink>
               </div>
             );
           })}
         </div>
-        <p className="mt-8 text-sm text-gray-600 dark:text-gray-300">
+        <Accent className="mt-8 text-sm text-gray-600 dark:text-gray-300">
           © {new Date().getFullYear()} Ahmadhi - All Rights Reserved
-        </p>
+        </Accent>
       </main>
     </footer>
   );

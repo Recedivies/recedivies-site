@@ -7,7 +7,7 @@ const Accent = ({ children, className }: AccentType) => {
     <span
       className={clsxm(
         "transition-colors",
-        "bg-gradient-to-tr from-primary-300 via-green-400/70 to-primary-400 bg-clip-text text-transparent dark:from-primary-300 dark:via-primary-100/70 dark:to-sky-300",
+        "bg-gradient-to-r from-primary-100 to-primary-200 bg-clip-text text-transparent dark:from-primary-100 dark:via-primary-500 dark:to-sky-500",
         className,
       )}
     >
