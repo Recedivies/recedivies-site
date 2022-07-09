@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
       <NextNProgress
-        color="#eb2754"
+        color="#35c9cd"
         startPosition={0.2}
         options={{ showSpinner: false }}
       />
