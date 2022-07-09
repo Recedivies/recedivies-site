@@ -1,13 +1,6 @@
-import type { LinkProps } from "next/link";
 import Link from "next/link";
 
-export type UnstyledLinkProps = {
-  readonly href: string;
-  readonly children: React.ReactNode;
-  readonly openNewTab?: boolean;
-  readonly className?: string;
-  readonly nextLinkProps?: Omit<LinkProps, "href">;
-} & React.ComponentPropsWithoutRef<"a">;
+import { UnstyledLinkProps } from "../../types";
 
 const UnstyledLink = ({
   children,

@@ -5,22 +5,7 @@ import Accent from "../components/Accent";
 import ProjectCard from "../components/ProjectCard";
 import Layout from "../components/layout/Layout";
 import { clsxm } from "../components/links/clsxm";
-
-export type Stacks = {
-  id: string;
-  icon: any;
-  name: string;
-};
-export type Project = {
-  image?: string;
-  title?: string;
-  content: string;
-  demo?: string;
-  github?: string;
-  type?: string;
-  slug: string;
-  stacks?: Stacks[];
-};
+import { Project } from "../types";
 
 const projects: Project[] = [
   {

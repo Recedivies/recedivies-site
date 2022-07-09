@@ -1,6 +1,5 @@
+import { AccentType } from "../types";
 import { clsxm } from "./links/clsxm";
-
-export type AccentType = React.ComponentPropsWithoutRef<"span">;
 
 const Accent = ({ children, className }: AccentType) => {
   return (
