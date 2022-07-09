@@ -11,6 +11,11 @@ declare module "next-themes" {
     children: React.ReactNode;
   }
 }
+declare module "react-tippy" {
+  interface TooltipProps {
+    children?: React.ReactNode;
+  }
+}
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

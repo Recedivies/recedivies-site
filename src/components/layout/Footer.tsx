@@ -12,6 +12,7 @@ import {
 import { Tooltip as TooltipTippy } from "react-tippy";
 
 import Accent from "../Accent";
+import UnstyledLink from "../links/UnstyledLink";
 
 const mail = "ahmadhi.prananta@ui.ac.id";
 
@@ -65,20 +66,17 @@ const Footer = () => {
               html={
                 <div className="inline-block rounded-md border bg-white p-2 text-gray-600 shadow-md dark:border-primary-500 dark:bg-dark dark:text-gray-200">
                   {copyClipboard}
-                  <Accent className="inline-block font-medium">
-                    ahmadhi.prananta@ui.ac.id
-                  </Accent>
+                  <Accent className="inline-block font-medium">{mail}</Accent>
                 </div>
               }
             >
               <CopyToClipboard
                 text={mail}
                 onCopy={() => {
-                  setCopyClipboard("Copied to clipboard!");
-                  setTimeout(
-                    () => setCopyClipboard("Click the mail logo to copy"),
-                    1469,
-                  );
+                  setCopyClipboard("Copied to clipboard : ");
+                  setTimeout(() => {
+                    setCopyClipboard("Click the mail logo to copy");
+                  }, 1500);
                 }}
               >
                 <button
@@ -93,13 +91,13 @@ const Footer = () => {
           {socials.map((social) => {
             return (
               <div key={social.link}>
-                <a
+                <UnstyledLink
                   aria-label={social.label}
                   className="inline-flex items-center justify-center rounded-sm focus:outline-none focus-visible:ring focus-visible:ring-primary-300"
                   href={social.link}
                 >
                   <social.icon className="my-auto h-6 w-6 align-middle text-gray-600 transition-colors hover:text-primary-300 dark:text-gray-300 dark:hover:text-primary-300" />
-                </a>
+                </UnstyledLink>
               </div>
             );
           })}
