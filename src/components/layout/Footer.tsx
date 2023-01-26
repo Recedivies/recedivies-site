@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { FiMail } from "react-icons/fi";
 import {
-  SiCodeforces,
   SiGithub,
   SiGitlab,
   SiHackerrank,
   SiLeetcode,
   SiLinkedin,
+  SiMedium
 } from "react-icons/si";
 import { Tooltip as TooltipTippy } from "react-tippy";
 
@@ -43,9 +43,9 @@ const socials = [
     icon: SiLeetcode,
   },
   {
-    label: "Codeforces",
-    link: "https://codeforces.com/profile/FlashNewbiePP",
-    icon: SiCodeforces,
+    label: "Medium",
+    link: "https://ahmadhi.medium.com/",
+    icon: SiMedium,
   },
 ] as const;
 
@@ -55,7 +55,7 @@ const Footer = () => {
   );
 
   return (
-    <footer className="mt-4 pb-2">
+    <footer className="mt-4 pb-2 dark:bg-dark">
       <main className="layout flex flex-col items-center border-t pt-6 dark:border-gray-600">
         <div className="mt-2 flex space-x-4">
           <div className="flex items-center justify-center">

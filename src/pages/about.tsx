@@ -24,14 +24,18 @@ const About: NextPage = () => {
                   "md:text-lg 2xl:text-xl",
                 )}
               >
-                I am very passionate in learning programming and software
-                engineering. I have a good experience with backend development,
-                using Nginx as a reverse proxy, using docker as a container in
-                development and production environment. I also like to try
-                frontend development too by making some React projects. I really
-                liked using GitHub Action to do CI/CD stuff. In my free time, I
-                like to explore all of tech and development stuff about software
-                engineering.
+                I am a student at University of Indonesia studying Computer
+                Science. I have a strong interest in Backend Development and
+                have been working on various projects to improve my skills in
+                that area. I have experience in programming languages such as
+                Golang, Java, and Python and I am always eager to learn new
+                technologies. I have worked on different projects such as
+                building RESTful APIs, working with databases, and implementing
+                security features, and optimizing the performance of the
+                systems. I have honed my problem-solving skills by daily
+                practices solving problems on LeetCode. I am passionate about
+                solving complex problems and creating efficient and effective
+                solutions.{" "}
               </p>
             </article>
           </section>

@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
+import { clsxm } from "../../lib/clsxm";
 import Accent from "../Accent";
 import UnstyledLink from "../links/UnstyledLink";
-import { clsxm } from "../../lib/clsxm";
 
 type Links = {
   href: string;
@@ -24,9 +24,12 @@ const Header = () => {
 
   return (
     <header
-      className={clsxm("sticky top-0 z-50 transition-shadow", "shadow-lg")}
+      className={clsxm(
+        "sticky top-0 z-50 transition-shadow dark:bg-dark",
+        "shadow-lg",
+      )}
     >
-      <div className="bg-light transition-colors dark:bg-dark dark:text-light">
+      <div>
         <nav className={clsxm("layout flex items-center justify-between py-4")}>
           <span className="font-semibold text-xl tracking-tight">
             <Link href="/" passHref>
@@ -36,10 +39,10 @@ const Header = () => {
                 initial={{ opacity: 0, y: -10 }}
               >
                 <span className="opacity-100 transition duration-300 group-hover:opacity-0">
-                  @Recedivies
+                  Ahmadhi Prananta
                 </span>
                 <Accent className="absolute left-0 bg-clip-text text-transparent opacity-0 transition duration-300 hover:bg-gradient-to-r group-hover:opacity-100">
-                  Ahmadhi Prananta
+                  @Recedivies
                 </Accent>
               </motion.a>
             </Link>

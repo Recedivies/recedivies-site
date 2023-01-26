@@ -37,11 +37,11 @@ export type AnimatePageProps = {
 
 export const defaultMeta = {
   title: "Ahmadhi Prananta Hastiputra",
-  siteName: process.env.NEXT_PUBLIC_HOSTNAME || "recedivies.vercel.app",
+  siteName: process.env.NEXT_PUBLIC_HOSTNAME || "ahmadhi.vercel.app",
   description: "My online portfolio and blog website.",
   url: process.env.NEXT_PUBLIC_HOSTNAME
     ? `https://${process.env.NEXT_PUBLIC_HOSTNAME}`
-    : "https://recedivies.vercel.app",
+    : "https://ahmadhi.vercel.app",
   image: "/vercel.svg",
   type: "website",
   robots: "follow, index",

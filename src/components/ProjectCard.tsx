@@ -56,7 +56,7 @@ const ProjectCard = ({ project }: ProjectCardProp) => {
               <tech.icon
                 key={tech.id}
                 className={clsxm(
-                  "h-8 w-8 md:h-6- md:w-10",
+                  "h-8 w-8 md:h-8 md:w-10",
                   "text-gray-600 hover:text-primary-300 dark:text-gray-200 dark:hover:text-primary-300",
                   "transition-colors",
                 )}

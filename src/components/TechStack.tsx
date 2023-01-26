@@ -1,12 +1,12 @@
 import {
   SiCplusplus,
   SiDjango,
+  SiDocker,
+  SiGo,
   SiJava,
   SiJavascript,
   SiPostgresql,
   SiPython,
-  SiReact,
-  SiTypescript,
 } from "react-icons/si";
 import { Tooltip } from "react-tippy";
 
@@ -40,11 +40,11 @@ const TechStack = () => {
 
 const stacks = [
   {
-    id: "python",
-    icon: SiPython,
+    id: "golang",
+    icon: SiGo,
     tooltip: (
       <>
-        <a href="https://www.python.org/">Python</a>
+        <a href="https://go.dev/">Go</a>
       </>
     ),
   },
@@ -54,6 +54,15 @@ const stacks = [
     tooltip: (
       <>
         <a href="https://www.java.com/">Java</a>
+      </>
+    ),
+  },
+  {
+    id: "python",
+    icon: SiPython,
+    tooltip: (
+      <>
+        <a href="https://www.python.org/">Python</a>
       </>
     ),
   },
@@ -76,15 +85,6 @@ const stacks = [
     ),
   },
   {
-    id: "typescript",
-    icon: SiTypescript,
-    tooltip: (
-      <>
-        <a href="https://www.typescriptlang.org/">TypeScript</a>
-      </>
-    ),
-  },
-  {
     id: "django",
     icon: SiDjango,
     tooltip: (
@@ -94,20 +94,20 @@ const stacks = [
     ),
   },
   {
-    id: "react",
-    icon: SiReact,
-    tooltip: (
-      <>
-        <a href="https://reactjs.org/">React</a>
-      </>
-    ),
-  },
-  {
     id: "postgresql",
     icon: SiPostgresql,
     tooltip: (
       <>
         <a href="https://www.postgresql.org/">Postgresql</a>
+      </>
+    ),
+  },
+  {
+    id: "docker",
+    icon: SiDocker,
+    tooltip: (
+      <>
+        <a href="https://www.docker.com/">Docker</a>
       </>
     ),
   },
