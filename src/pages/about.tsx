@@ -32,7 +32,7 @@ const About: NextPage = () => {
                 technologies. I have worked on different projects such as
                 building RESTful APIs, working with databases, and implementing
                 security features, and optimizing the performance of the
-                systems. I have honed my problem-solving skills by daily
+                systems. I have improved my problem-solving abilities by daily
                 practices solving problems on LeetCode. I am passionate about
                 solving complex problems and creating efficient and effective
                 solutions.{" "}
