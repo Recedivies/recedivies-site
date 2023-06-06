@@ -1,5 +1,12 @@
 import type { NextPage } from "next";
-import { SiNextdotjs, SiTailwindcss, SiTypescript } from "react-icons/si";
+import {
+  SiGo,
+  SiLeetcode,
+  SiNextdotjs,
+  SiPostgresql,
+  SiTailwindcss,
+  SiTypescript,
+} from "react-icons/si";
 
 import Accent from "../components/Accent";
 import AnimatePage from "../components/AnimatePage";
@@ -34,6 +41,63 @@ const projects: Project[] = [
         id: "Tailwindcss",
         icon: SiTailwindcss,
         name: "Tailwind CSS",
+      },
+    ],
+  },
+  {
+    title: "Dados",
+    content:
+      "Dados is a review site which allows anyone to assign ratings to professors and campuses of Indonesian institutions.",
+    slug: "api_backend",
+    type: "api",
+    github: "dados-id/dados-be/tree/staging",
+    demo: "",
+    image: "dados.png",
+    stacks: [
+      {
+        id: "go",
+        icon: SiGo,
+        name: "Go",
+      },
+      {
+        id: "postgres",
+        icon: SiPostgresql,
+        name: "Postgresql",
+      },
+    ],
+  },
+  {
+    title: "LeetCode Solutions",
+    content:
+      "My LeetCode solution to various problem topics. This website offers several explanations" +
+      " for each problem in multiple programming languages.",
+    slug: "leetcode_solutions",
+    type: "documentation",
+    github: "Recedivies/leetcode",
+    demo: "https://recedivies.github.io/leetcode/",
+    image: "recedivies-leetcode.png",
+    stacks: [
+      {
+        id: "leetcode",
+        icon: SiLeetcode,
+        name: "LeetCode",
+      },
+    ],
+  },
+  {
+    title: "Rece-LB",
+    content:
+      "Building HTTP load balancer and reverse proxy from scratch written in Go",
+    slug: "load_balancer",
+    type: "exploration",
+    github: "Recedivies/rece-lb",
+    demo: "",
+    image: "load-balancer.png",
+    stacks: [
+      {
+        id: "go",
+        icon: SiGo,
+        name: "Go",
       },
     ],
   },

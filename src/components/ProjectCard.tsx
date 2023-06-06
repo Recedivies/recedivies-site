@@ -29,7 +29,6 @@ const ProjectCard = ({ project }: ProjectCardProp) => {
             alt={project.title}
             src={`/images/projects/${project.image}`}
             layout="fill"
-            objectFit="cover"
           />
         </div>
       )}
@@ -42,7 +41,7 @@ const ProjectCard = ({ project }: ProjectCardProp) => {
         >
           {project.title}
         </a>
-        <p className="mb-1">{project.content}</p>
+        <p className="mb-1 text-lg">{project.content}</p>
         <div className="grid grid-cols-9">
           {project.stacks?.map((tech) => (
             <Tooltip
