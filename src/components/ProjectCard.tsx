@@ -33,14 +33,19 @@ const ProjectCard = ({ project }: ProjectCardProp) => {
         </div>
       )}
       <div className="px-4 pt-4 pb-16">
-        <a
-          href={project.demo}
-          target="_blank"
-          className="text-xl font-semibold"
-          rel="noopener noreferrer"
-        >
-          {project.title}
-        </a>
+        {project.demo!.length > 0 ? (
+          <a
+            href={project.demo}
+            target="_blank"
+            className="text-xl font-semibold"
+            rel="noopener noreferrer"
+          >
+            {project.title}
+          </a>
+        ) : (
+          <div className="text-xl font-semibold">{project.title}</div>
+        )}
+
         <p className="mb-1 text-lg">{project.content}</p>
         <div className="grid grid-cols-9">
           {project.stacks?.map((tech) => (
