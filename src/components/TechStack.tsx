@@ -7,6 +7,7 @@ import {
   SiJavascript,
   SiPostgresql,
   SiPython,
+  SiSpringboot,
 } from "react-icons/si";
 import { Tooltip } from "react-tippy";
 
@@ -90,6 +91,15 @@ const stacks = [
     tooltip: (
       <>
         <a href="https://www.djangoproject.com/">Django</a>
+      </>
+    ),
+  },
+  {
+    id: "springboot",
+    icon: SiSpringboot,
+    tooltip: (
+      <>
+        <a href="https://spring.io/projects/spring-boot">Spring Boot</a>
       </>
     ),
   },

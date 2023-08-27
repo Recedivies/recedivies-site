@@ -30,12 +30,13 @@ const About: NextPage = () => {
                 that area. I have experience in programming languages such as
                 Golang, Java, and Python and I am always eager to learn new
                 technologies. I have worked on different projects such as
-                building RESTful APIs, working with databases, and implementing
-                security features, and optimizing the performance of the
-                systems. I have improved my problem-solving abilities by daily
-                practices solving problems on LeetCode. I am passionate about
-                solving complex problems and creating efficient and effective
-                solutions.{" "}
+                building microservices architecture, implementing RESTful APIs,
+                working with various databases, and optimizing the performance
+                of the systems. I have improved my problem-solving abilities by
+                daily practices solving problems on LeetCode. I am passionate
+                about solving complex problems and creating efficient and
+                effective solutions. Currently I'm in the process of exploring
+                concept of distributed systems.{" "}
               </p>
             </article>
           </section>
