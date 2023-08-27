@@ -35,8 +35,8 @@ const About: NextPage = () => {
                 of the systems. I have improved my problem-solving abilities by
                 daily practices solving problems on LeetCode. I am passionate
                 about solving complex problems and creating efficient and
-                effective solutions. Currently I'm in the process of exploring
-                concept of distributed systems.{" "}
+                effective solutions. Currently I&apos;m in the process of
+                exploring concept of distributed systems.{" "}
               </p>
             </article>
           </section>
